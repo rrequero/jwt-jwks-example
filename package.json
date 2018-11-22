@@ -1,0 +1,28 @@
+{
+  "name": "jwt-jwks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate-jwks": "node generate-jwks.js",
+    "generate-jwt": "node generate-jwt.js",
+    "start-server": "node server.js",
+    "start-http-server": "http-server .",
+    "serve": "concurrently --kill-others \"npm run start-server\" \"npm run start-http-server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.4.0",
+    "jwks-rsa": "^1.3.0",
+    "koa": "^2.6.2",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "pem-jwk": "^1.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1"
+  }
+}
